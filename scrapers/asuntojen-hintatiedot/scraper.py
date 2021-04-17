@@ -144,7 +144,7 @@ def has_next_page(soup):
 def save_data(dict_data):
     csv_columns = list(dict_data[0].keys())
     today = datetime.today().strftime("%Y-%m-%d")
-    with open(f'./scraped_data/{today}.json', 'w') as csvfile:
+    with open(f'./scraped_data/{today}.csv', 'w') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
         writer.writeheader()
         for data in dict_data:
