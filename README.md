@@ -43,3 +43,15 @@ optional arguments:
   -h, --help   show this help message and exit
   --page PAGE  Scrape and print data for a single page, useful for debugging
 ```
+
+## Analytics
+
+### Visualizations
+
+#### Installation
+
+To enable interactive plots you need to follow plotly [installation guide](https://plotly.com/python/getting-started/). Namely run 
+
+`jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget@4.14.3`
+
+after installing the requirements with pip.
