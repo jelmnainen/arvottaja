@@ -2,8 +2,6 @@
 
 This repository aims to provide a method for estimating the value of a given apartment. Currently, only houses in Finland are supported.
 
-Furthermore, at the moment, the only implementations are for two data scrapers.
-
 ## Data scrapers
 These live in the `/scrapers` folder. The folders are arranged by scraped website.
 
@@ -43,3 +41,6 @@ optional arguments:
   -h, --help   show this help message and exit
   --page PAGE  Scrape and print data for a single page, useful for debugging
 ```
+
+## Data exploration
+There is a jupyter notebook in `explorations`. It currently uses the provided example data from `asuntojen-hintatiedot`. Feel free to duplicate the notebook and change in your data!
