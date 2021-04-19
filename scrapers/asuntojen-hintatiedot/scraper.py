@@ -17,6 +17,17 @@ parser.add_argument('city', help='Which city should be parsed, capitalized. E.g.
 parser.add_argument('--page', help='Scrape and print data for a single page, useful for debugging')
 args = parser.parse_args()
 
+
+def replace_invalid_characters(text):
+    '''
+    asuntojen hintatiedot returns occasionally invalid html, let's replace
+    known invalid things manually.
+    '''
+
+    # encoded ä or ö has been rendered as &#246 or &#248, but the string has been cut and concatenated by ...
+    text = text.replace('&#.', '')
+    return text
+
 def get_single_page_html(city, page_num):
     """
         return soup of requested page, or test page if env == 'DEV'
@@ -27,17 +38,21 @@ def get_single_page_html(city, page_num):
     """
     if os.environ.get("ENV", False) == 'DEV':
         print("DEV mode, use local test html page")
-        with open('static_pages/test.html') as fp:
-            soup = BeautifulSoup(fp, 'html.parser')
+        with open('static_pages/test_helsinki.html') as fp:
+            raw_html = fp.read()
+            soup = BeautifulSoup(replace_invalid_characters(raw_html), 'html.parser')
             return soup
     if os.environ.get("ENV", False) == 'DEBUG':
         print("DEBUG mode, use local test html page")
         with open('static_pages/debug.html') as fp:
-            soup = BeautifulSoup(fp, 'html.parser')
+            raw_html = fp.read()
+            soup = BeautifulSoup(replace_invalid_characters(raw_html), 'html.parser')
             return soup
+    
     url = f'https://asuntojen.hintatiedot.fi/haku/?c={city}&cr=1&t=3&l=0&z={page_num}&search=1&sf=0&so=a&renderType=renderTypeTable&print=0&submit=seuraava+sivu+%C2%BB'
     data = requests.get(url)
-    soup = BeautifulSoup(data.text, 'html.parser')
+    text = replace_invalid_characters(data.text)
+    soup = BeautifulSoup(text, 'html.parser')
     return(soup)
 
 def first(arr):
@@ -194,3 +209,4 @@ if args.page:
     get_single_page(args.city, args.page)
 else:
     main(args.city)
+

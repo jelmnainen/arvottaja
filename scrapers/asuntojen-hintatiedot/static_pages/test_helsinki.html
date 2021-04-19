@@ -1,0 +1,1273 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fi" >
+    <head>
+        <link rel="Shortcut Icon" href="/stc/img/favicon.ico" type="image/x-icon" />
+        <title>
+            Asuntojen.hintatiedot.fi
+        </title>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="robots" content="all" />
+        <meta name="author" content="Ymp&#228;rist&#246;ministeri&#246;" />
+        <meta name="description" content="Palvelun kautta voi hakea kerros-, rivi- ja omakotitalojen asuntokauppatietoja viimeisen 12 kuukauden ajalta koko Suomen alueelta." />
+        <meta name="DC.Title" content="Asuntokauppojen Hintanet-palvelu" />
+        <meta name="DC.Subject" content="Asuntojen myyntihintatiedot" />
+        <meta name="DC.Topic" content="" />
+        <meta name="DC.Description" content="Palvelun kautta voi hakea kerros-, rivi- ja omakotitalojen asuntokauppatietoja viimeisen 12 kuukauden ajalta koko Suomen alueelta." />
+        <meta name="DC.Creator" content="Ymp&#228;rist&#246;ministeri&#246;" />
+        <meta name="DC.Publisher" content="Ymp&#228;rist&#246;ministeri&#246;" />
+        <meta name="DC.Creator.CorporateName" content="Ymp&#228;rist&#246;ministeri&#246;" />
+        <meta name="DC.Creator.CorporateName.Address" content="" />
+        <meta name="DC.Type" content="Text.Homepage.Organizational" />
+        <meta name="DC.Date.Created" content="2007-06-12" />
+        <meta name="DC.Date.LastModified" content="2007-06-19" />
+        <meta name="DC.Language" content="fin" />
+        <meta name="DC.Rights" content="Ymp&#228;rist&#246;ministeri&#246;" />
+        <meta name="DC.Identifier" content="https://asuntojen.hintatiedot.fi/haku/" />
+        <meta name="viewport" content="width= device-width, initial-scale=1.0" />
+
+        	<link rel="stylesheet" type="text/css" href="/haku/css/site.css" media="screen" />
+
+        <link rel="stylesheet" type="text/css" href="/stc/print.css" media="print" />
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/themes/redmond/jquery-ui.css"/>
+
+        
+        <script src='/stc/js/jquery.multiselect.js'></script>
+        <script src='/stc/js/jquery.multiselect.filter.js'></script>
+        <script src="/haku/js/tabs.js"></script>
+
+        <script src='/stc/js/jquery.multiselect.fi.js'></script>
+
+
+
+        <link rel="stylesheet" type="text/css" href="/stc/css/jquery.multiselect.css" />
+        <link rel="stylesheet" type="text/css" href="/stc/css/jquery.multiselect.filter.css" />
+
+        <script src="/stc/js/searchForm.js"></script>
+        <script src="/stc/js/searchFormApartmentMap.js"></script>
+        <script src="/stc/js/hintanetJS.js"></script>
+
+
+        <script src="/stc/js/searchFormPropertiesFI.js"></script>
+        
+ 
+        <script src="/stc/js/langAndSize.js"></script>
+
+        
+	<script>
+            $(document).ready(function() {
+                $('#next-prev-top').insertBefore('#mainTable');
+                $('#next-prev-bottom').insertAfter('#mainTable');
+            });
+        </script>
+        
+            		 <style media="screen">
+            <!--
+            body {font-size:76%;}
+
+            -->
+        </style>
+        
+    </head>
+   
+    <body>
+         <div id="site">
+
+          <div id="language" style="display:none">
+                fi_FI
+            </div>
+           <div class="welcome">
+           <h1><a href="/" title="Etusivu"> Asuntojen.hintatiedot.fi</a></h1>
+
+             <div id="topNavi" role="navigation">
+             <div id="mobileNavi">&#9776;</div>
+            		<div id="supportNavi">
+                		<a href="/ohje/ohjeet.html">Ohjeet</a>
+                		<span class="text-size on-desktop">&nbsp;|&nbsp;</span>
+                		<br class="br-on-mobile" />
+                    	<a href="/tietoa/tietoa.html">Tietoa palvelusta</a><span class="text-size on-desktop">&nbsp;|&nbsp;</span><br class="br-on-mobile" />
+                    	<a href="/usein_kysyttya/usein_kysyttya.html">Usein kysyttyä</a><span class="text-size on-desktop">&nbsp;|&nbsp;</span><br class="br-on-mobile" />
+                    	<a href="/palaute/palaute.html">Palaute</a><span class="text-size on-desktop">&nbsp;|&nbsp;</span><br class="br-on-mobile" />
+                		
+                			<form action="/haku/" method="get" target="_blank">
+                    			<input type="hidden" name="c" value="Helsinki" />
+                    			<input type="hidden" name="cr" value="1" />
+                    			
+                    			
+                    			
+                    			
+                    			<input type="hidden" name="amin" value="" />
+                    			<input type="hidden" name="amax" value="" />
+                    			<input type="hidden" name="renderType" value="renderTypeTable" />
+                    			<input type="hidden" name="print" value="1" />
+                    			<input type="hidden" name="search" value="1" />
+                    			<input type="submit" class="submit print" name="submit" value="Tulosta" />
+                			</form>
+                			<span class="print on-desktop">&nbsp;|&nbsp;</span>
+                		
+
+                 <form action="/haku" method="get" onsubmit="setLang(0)">
+                    <input type="hidden" name="l" value="0" />
+                    <input type="submit" class="submit" name="submit" lang="fi" value="Suomeksi" />
+                </form>
+                <span class="text-size on-desktop">&nbsp;|&nbsp;</span><br class="br-on-mobile" />
+                <form action="/haku" method="get" onsubmit="setLang(1)">
+                    <input type="hidden" name="l" value="1" />
+                    <input type="submit" class="submit" name="submit" lang="sv" value="P&#229; Svenska" />
+                </form>
+                  <span class="text-size on-desktop">&nbsp;|&nbsp;</span><br class="br-on-mobile" />
+                <form action="/haku" method="get" onsubmit="setLang(2)">
+                    <input type="hidden" name="l" value="2" />
+                    <input type="submit" class="submit" name="submit" lang="en" value="In English" />
+                </form>&nbsp;
+            </div>
+
+        </div>
+       
+       </div>
+        
+            <div id="siteBody">
+
+               
+
+               <div class="search-form-container">
+                <ul class="search-form-tabs">
+                    <li class="active">
+<!--                     	<span id="showArrowApartments">&#9658;</span> -->
+<!--                     	<span id="hideArrowApartments">&#9668;</span> -->
+                        <a class="desktopTab" href="/haku">Asuntokaupat</a>
+                        <span class="mobileTab" id="mobileTabApartments">Asuntokaupat</span>
+                    </li>
+                    <li >
+                        <a class="desktopTab" href="/haku/vuokratiedot">Vuokrat</a>
+                        <a class="mobileTab" href="/haku/vuokratiedot">Vuokrat</a>
+                    </li>
+                </ul>
+                <div class="search-form-tab-content">
+                    <div class="search-form-tab-view active" id="apartments">
+                     	
+
+
+<div class="searchForm">
+        <div class="apartments-form-tab-content">
+            <!-- TABLE FORM STARTS -->
+            <div id="searchForm">
+            <div id="close">X</div>
+                <form role="search">
+                <div class="apartments-form-tab-view active" id="apartments-tables">
+                    <div class="search-form-row">
+                        <div class="search-form-col-8">
+                            <div class="city">
+                                <label for="cityField"><strong>Kaupunki tai kunta</strong></label>
+                                <input class="slim ui-autocomplete-input" type="text" name="c" maxlength="20" id="cityField" placeholder="Kirjoita ja valitse kunta" value="Helsinki" /><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                            </div>
+                            <fieldset>
+                            <legend><strong>Postinumero tai kaupunginosa</strong></legend>
+                            <div class="postalcode">
+                            	<input type="radio" id="postalcode" name="cr" value="1" checked/>
+                            	<label class="radio" for="postalcode">
+                                	Postinumero
+								</label>
+                                <select name="ps" id="postalSelect" multiple="multiple" aria-label="Postinumero" style="display:none">
+                                </select>
+                                <div id="postalFieldWrapper"><input class="slim" type="text" name="ps" maxlength="5" id="postalField" aria-label="Postinumero" value=""/></div>
+                               
+                            </div>
+                            <div class="neighborhood">
+                            	<input type="radio" id="neighborhood" name="cr" value="2"   disabled="disabled"/>
+                            	<label class="radio" for="neighborhood">
+									Kaupunginosa
+								</label>
+								<select name="ns" id="neighborhoodSelect" multiple="multiple" disabled="disabled" aria-label="Kaupunginosa">
+								</select>
+
+                                <input id="neighborhoodCount" type="hidden" name="nc" value="0" />
+
+                        	</div>
+                        	</fieldset>
+                     
+                        </div>
+                        <div class="search-form-col-12">
+                        <div class="search-form-col-6">
+                            <div class="rooms">
+                            	<fieldset>
+                                	<legend><strong>Talotyyppi</strong></legend>
+                                    	<input class="checkbox" type="checkbox" name="h" value="1" id="apartment" >
+                                    	<label for="apartment">
+                                    		<span class="desktop">Kerrostalo</span>
+                                    		<span class="mobile">Kerrostalo</span>
+                                    	</label>
+                                    	<input class="checkbox" type="checkbox" name="h" value="2" id="semidetached" >
+                                    	<label for="semidetached">
+                                    		<span class="desktop">Rivitalo</span>
+                                    		<span class="mobile">Rivitalo</span>
+                                		</label>
+                                    	<input class="checkbox" type="checkbox" name="h" value="3" id="detached" >
+                                    	<label for="detached">
+                                    		<span class="desktop">Omakotitalo</span>
+                                    		<span class="mobile">Omakotitalo</span>
+                                		</label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="search-form-col-6">
+                            <div class="rooms">
+                            	<fieldset>
+                                	<legend><strong>Huoneluku</strong></legend>
+                                    	<input class="checkbox" type="checkbox" name="r" value="1" id="formsingles" >
+                                    	<label for="formsingles">
+                                    		<span class="desktop">Yksi&#246;</span>
+                                    		<span class="mobile">1</span>
+                                		</label>
+                                    	<input class="checkbox" type="checkbox" name="r" value="2" id="formduplex" >
+                                    	<label for="formduplex">
+                                    		<span class="desktop">Kaksio</span>
+                                    		<span class="mobile">2</span>
+                                		</label>
+                                    	<input class="checkbox" type="checkbox" name="r" value="3" id="formthree" >
+                                    	<label for="formthree">
+                                    		<span class="desktop">3 huonetta</span>
+                                    		<span class="mobile">3</span>
+                                		</label>
+                                    	<input class="checkbox" type="checkbox" name="r" value="4" id="formfour" >
+                                    	<label for="formfour">
+                                    		<span class="desktop">4 huonetta tai enemm&#228;n</span>
+                                    		<span class="mobile">4+</span>
+                                		</label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        </div>
+                         <div class="search-form-col-8">
+                            <div class="area">
+                            	<fieldset>
+                              		<legend><strong>Asuinpinta-ala</strong></legend>
+                              			<input type="text" class="small slim" name="amin" maxlength="7" aria-label="V&#228;himm&#228;ispinta-ala" value=""/>
+                              			-
+                              			<input type="text" class="small slim" name="amax" maxlength="7" aria-label="Enimm&#228;ispinta-ala"  value=""/>
+                              	 		m<sup>2</sup>
+                              	 </fieldset>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="search-form-row">
+                        <div class="search-form-row-12 align-right separator-top">                           
+                            <a id="instructions" href="/ohje/ohjeet.html"><img src="/stc/img/ohjeet_icon.png" alt="Ohjeet"/></a>
+                            <input type="submit" value="Haku" id="search" />
+                            <input type="button" value="Tyhjenn&#228;" id="clearApartmentsTable" />
+                        </div>
+                        <div class="search-form-row-12 align-right separator-top">
+                            
+                            	<a href="/haku/vuokratiedot?c=Helsinki&cr=1&ps=&nc=0&amin=&amax=&renderType=renderTypeTable&search=1&renderType=renderTypeTable" style="float: left;">Hae vastaavalta alueelta vuokra-asunnoista</a>
+                                                        
+                        </div>
+                    </div>
+                    
+                </div>
+                <input type="hidden" class="render-type" value="renderTypeTable" name="renderType" />
+                <input type="hidden" value="1" name="search"/>
+                </form>
+            </div>
+            <!-- TABLE FORM ENDS -->
+            
+                 
+            <!-- MAP FORM STARTS -->
+            <div id="searchFormMap">
+                <form role="search">
+                <div class="apartments-form-tab-view " id="apartments-map">
+                    <div class="search-form-row">
+                        <div class="search-form-col-8">
+                            <div class="city">
+                                <label for="cityFieldMap"><strong>Kaupunki tai kunta</strong></label>
+                                <input class="slim ui-autocomplete-input" type="text" name="c" maxlength="20" id="cityFieldMap" placeholder="Kirjoita ja valitse kunta"  value="Helsinki">
+                                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                            </div>
+                            <div class="postalcodeMap">
+                                <label for="postalField-map">
+                                	<strong>Postinumero</strong>
+								</label>
+                                <select name="ps" id="postalSelectMap" multiple="multiple" aria-label="Postinumero" style="display:none"></select>
+                                <div id="postalFieldWrapperMap">
+                                    <input class="slim" type="text" name="ps" maxlength="5" id="postalField-map" value=""></div>
+                               
+                            </div>
+                        </div>
+                        <div class="search-form-col-12">
+                            <div class="roomcount" id="select-room-type">
+                             <div class="search-form-col-6">
+                             	<fieldset>
+									<legend><strong>Talotyyppi</strong></legend>
+                                    <input type="radio" value="6" name='select-room-type' class="layer-switch" id="housetotal" checked>
+                                    <label class="radio checked" for="housetotal">
+                                    	Talotyypit yhteensä
+                                	</label>							
+                                    <input type="radio" value="4" name='select-room-type' class="layer-switch" id="apartmenttotal" >
+                                    <label class="radio" for="apartmenttotal">
+                                    	Kerrostalot yhteensä
+                                	</label>
+                                    <input type="radio" value="5" name='select-room-type' class="layer-switch" id="roomtotal" >
+                                    <label class="radio" for="roomtotal">
+                                    	Rivitalot yhteensä
+                                	</label>
+                                </fieldset>
+                              </div>            
+                            </div>
+                        </div> 
+                          
+                    </div>
+                    <div class="search-form-row">
+                        <div class="search-form-row-12 align-right separator-top">
+                            
+                            <a id="instructionsMap" href="/ohje/ohjeet.html"><img src="/stc/img/ohjeet_icon.png" alt="Ohjeet"/></a>
+                            <input type="submit" value="Haku" id="searchMap" />
+                            <input type="button" value="Tyhjenn&#228;" id="clearApartmentsMap" />  
+                        </div>
+                        <div class="search-form-row-12 align-right separator-top"> 
+                            
+                            	<a href="/haku/vuokratiedot?c=Helsinki&cr=1&ps=&nc=0&amin=&amax=&renderType=renderTypeTable&search=1&renderType=renderTypeTable" style="float: left;">Hae vastaavalta alueelta vuokra-asunnoista</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" class="render-type" value="renderTypeTable" name="renderType" />
+                </form>
+            </div>
+        </div>
+        <ul class="apartments-form-tabs">
+        	<li class="active"><a href="#apartments-tables" id="renderTypeTable">Taulukko</a></li>
+         	<li ><a href="#apartments-map" id="renderTypeMap">Kartta</a></li>
+            
+           
+        </ul>
+</div>
+
+                    </div>
+
+                    <div class="search-form-tab-view" id="rents">
+                    </div>
+                </div>
+            </div>
+        
+        <div id="top">
+
+                
+
+      </div>
+      
+      
+      
+            
+            	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+            
+
+
+            <div id="previousSearch" style="display:none">
+                <div id="postalCodes">
+                    
+                </div>
+                <div id="neighborhoods">
+                    
+                </div>
+            </div>
+
+
+            
+            
+
+                
+
+                
+
+                
+                			<table id="mainTable" aria-live="polite">
+<br><caption><strong>Asuntokaupat Helsinki</strong></caption><br>					<thead class="head">
+						<tr>
+							<th><a href="/haku/?c=Helsinki&renderType=renderTypeTable&cr=1&search=1&sf=1&so=a">Kaupunginosa <span class="smallArrow">&#9668;</span></a></th>
+							<th>Huoneisto</th>
+							<th class="cellAlignRight"><a href="/haku/?c=Helsinki&renderType=renderTypeTable&cr=1&search=1&sf=11&so=a">Talot. <span class="smallArrow">&#9668;</span></a></th>
+							<th class="cellAlignRight"><a href="/haku/?c=Helsinki&renderType=renderTypeTable&cr=1&search=1&sf=3&so=a">m<sup>2</sup> <span class="smallArrow">&#9668;</span></a></th>
+							<th class="cellAlignRight"><a href="/haku/?c=Helsinki&renderType=renderTypeTable&cr=1&search=1&sf=4&so=a">Vh &#8364; <span class="smallArrow">&#9668;</span></a></th>
+							<th class="cellAlignRight"><a href="/haku/?c=Helsinki&renderType=renderTypeTable&cr=1&search=1&sf=5&so=a">&#8364;/m<sup>2</sup> <span class="smallArrow">&#9668;</span></a></th>
+							<th class="cellAlignRight"><a href="/haku/?c=Helsinki&renderType=renderTypeTable&cr=1&search=1&sf=6&so=a">Rv <span class="smallArrow">&#9668;</span></a></th>
+							<th><a href="/haku/?c=Helsinki&renderType=renderTypeTable&cr=1&search=1&sf=7&so=a">Krs <span class="smallArrow">&#9668;</span></a></th>
+							<th><a href="/haku/?c=Helsinki&renderType=renderTypeTable&cr=1&search=1&sf=8&so=a">Hissi <span class="smallArrow">&#9668;</span></a></th>
+							<th><a href="/haku/?c=Helsinki&renderType=renderTypeTable&cr=1&search=1&sf=9&so=a">Kunto <span class="smallArrow">&#9668;</span></a></th>
+							<th><a href="/haku/?c=Helsinki&renderType=renderTypeTable&cr=1&search=1&sf=12&so=a">Tontti <span class="smallArrow">&#9668;</span></a></th>
+<th><a href="/haku/?c=Helsinki&renderType=renderTypeTable&cr=1&search=1&sf=10&so=a">Energial. <span class="smallArrow">&#9668;</span></a></th>
+						</tr>
+					</tbody>
+					<tbody class="odd">
+						<tr>
+							<td colspan="12" class="fullWidth">
+								<table class="pagination" id="next-prev-top">
+									<tr>
+										<td class="more">&#160;</td>
+										<td align="center">1</td>
+										<td class="more" align="right">
+											<form action="" method="get">
+												<input type="hidden" name="c" value="Helsinki" />
+					<input type="hidden" name="cr" value="1" />
+												<input type="hidden" name="t" value="3" />
+												<input type="hidden" name="l" value="0" />
+												<input type="hidden" name="z" value="2" />
+												<input type="hidden" name="search" value="1" />
+												<input type="hidden" name="sf" value="0" />
+												<input type="hidden" name="so" value="a" />
+												<input type="hidden" name="renderType" value="renderTypeTable" />
+												<input type="hidden" name="print" value="0" />
+												<input type="submit" class="submit" name="submit" value="seuraava sivu &#187;" />
+											</form>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+					<tbody class="odd">
+						<tr>
+							<td colspan="12" class="section"><strong>Yksi&#246;</strong></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Kannelm&#228;ki</td>
+							<td>1h, k, kph ja r...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">29,00</td>
+							<td class="cellAlignRight">153850</td>
+							<td class="cellAlignRight">5305</td>
+							<td class="cellAlignRight">1959</td>
+							<td>1/4</td>
+							<td>ei</td>
+							<td>tyyd.</td>
+							<td>vuokra							<td>D</td>
+						</tr>
+						<tr>
+							<td class="neighborhood">S&#246;rn&#228;inen</td>
+							<td>1h+ka+ma+kph</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">29,00</td>
+							<td class="cellAlignRight">245000</td>
+							<td class="cellAlignRight">8448</td>
+							<td class="cellAlignRight">1933</td>
+							<td>4/7</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>E<sub>2007</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Hakaniemi</td>
+							<td>1h, k, kph, eri...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">36,40</td>
+							<td class="cellAlignRight">310000</td>
+							<td class="cellAlignRight">8516</td>
+							<td class="cellAlignRight">1908</td>
+							<td>4/5</td>
+							<td>ei</td>
+							<td>hyvä</td>
+							<td>oma							<td>E<sub>2007</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Torkkelinm&#228;ki</td>
+							<td>1h+avok.+kph+wc</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">37,00</td>
+							<td class="cellAlignRight">246000</td>
+							<td class="cellAlignRight">6649</td>
+							<td class="cellAlignRight">1927</td>
+							<td>2/4</td>
+							<td>ei</td>
+							<td>tyyd.</td>
+							<td>oma							<td>G<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Torkkelinm&#228;ki</td>
+							<td>1h+avok.+kph+wc</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">37,00</td>
+							<td class="cellAlignRight">246000</td>
+							<td class="cellAlignRight">6649</td>
+							<td class="cellAlignRight">1927</td>
+							<td>2/4</td>
+							<td>ei</td>
+							<td>tyyd.</td>
+							<td>oma							<td>G<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Alppila</td>
+							<td>1k+kk+kph+parveke</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">21,00</td>
+							<td class="cellAlignRight">195000</td>
+							<td class="cellAlignRight">9286</td>
+							<td class="cellAlignRight">1960</td>
+							<td>7/8</td>
+							<td>on</td>
+							<td>tyyd.</td>
+							<td>oma							<td></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Munkkivuori</td>
+							<td>1h+kk+kh</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">23,80</td>
+							<td class="cellAlignRight">166000</td>
+							<td class="cellAlignRight">6975</td>
+							<td class="cellAlignRight">1957</td>
+							<td>3/5</td>
+							<td>ei</td>
+							<td>tyyd.</td>
+							<td>vuokra							<td>G<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Munkkisaari</td>
+							<td>1h, kk, kph</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">25,00</td>
+							<td class="cellAlignRight">211000</td>
+							<td class="cellAlignRight">8440</td>
+							<td class="cellAlignRight">1912</td>
+							<td>1/4</td>
+							<td>ei</td>
+							<td>tyyd.</td>
+							<td>oma							<td>E<sub>2018</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">S&#246;rn&#228;inen</td>
+							<td>1h,kk</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">28,00</td>
+							<td class="cellAlignRight">240100</td>
+							<td class="cellAlignRight">8575</td>
+							<td class="cellAlignRight">1927</td>
+							<td>5/7</td>
+							<td>on</td>
+							<td>tyyd.</td>
+							<td>oma							<td>D<sub>2007</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Lauttasaari / vattuniemi</td>
+							<td>1h+kk+kph+las.p</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">28,50</td>
+							<td class="cellAlignRight">270000</td>
+							<td class="cellAlignRight">9474</td>
+							<td class="cellAlignRight">2019</td>
+							<td>3/7</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>C<sub>2018</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Kulosaari </td>
+							<td>1h+kk+kph</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">30,00</td>
+							<td class="cellAlignRight">236000</td>
+							<td class="cellAlignRight">7867</td>
+							<td class="cellAlignRight">1961</td>
+							<td>2/3</td>
+							<td>ei</td>
+							<td>hyvä</td>
+							<td>oma							<td>G<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Etel&#228;-haaga</td>
+							<td>1h, avok, kph, ...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">30,90</td>
+							<td class="cellAlignRight">218000</td>
+							<td class="cellAlignRight">7055</td>
+							<td class="cellAlignRight">1954</td>
+							<td>4/4</td>
+							<td>ei</td>
+							<td>hyvä</td>
+							<td>oma							<td>E<sub>2007</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">T&#246;&#246;l&#246;</td>
+							<td>1h + kk</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">33,00</td>
+							<td class="cellAlignRight">287000</td>
+							<td class="cellAlignRight">8697</td>
+							<td class="cellAlignRight">1933</td>
+							<td>2/6</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>F<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Mellunkyl&#228;</td>
+							<td>1 h+pk</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">34,00</td>
+							<td class="cellAlignRight">109000</td>
+							<td class="cellAlignRight">3206</td>
+							<td class="cellAlignRight">1973</td>
+							<td>1/3</td>
+							<td>ei</td>
+							<td>&#160;</td>
+							<td>oma							<td>F<sub>2007</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Puotila</td>
+							<td>1 h + kk</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">36,00</td>
+							<td class="cellAlignRight">133000</td>
+							<td class="cellAlignRight">3694</td>
+							<td class="cellAlignRight">1965</td>
+							<td>2/3</td>
+							<td>ei</td>
+							<td>&#160;</td>
+							<td>oma							<td>E<sub>2007</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Vartiokyl&#228;</td>
+							<td>1h+avok.+kh+vh+...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">36,50</td>
+							<td class="cellAlignRight">170500</td>
+							<td class="cellAlignRight">4671</td>
+							<td class="cellAlignRight">2019</td>
+							<td>4/4</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>vuokra							<td>D<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Kamppi</td>
+							<td>1h+k</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">41,00</td>
+							<td class="cellAlignRight">380000</td>
+							<td class="cellAlignRight">9268</td>
+							<td class="cellAlignRight">1908</td>
+							<td>3/6</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>F<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Kruununhaka</td>
+							<td>1h+avok+kph</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">41,30</td>
+							<td class="cellAlignRight">342000</td>
+							<td class="cellAlignRight">8281</td>
+							<td class="cellAlignRight">1930</td>
+							<td>3/7</td>
+							<td>on</td>
+							<td>tyyd.</td>
+							<td>oma							<td>D<sub>2018</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Kallio</td>
+							<td>1h, avok ja alkovi</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">27,00</td>
+							<td class="cellAlignRight">214000</td>
+							<td class="cellAlignRight">7926</td>
+							<td class="cellAlignRight">1937</td>
+							<td>3/7</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>G<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Pihlajam&#228;ki</td>
+							<td>1 h, kk, kph/wc...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">30,00</td>
+							<td class="cellAlignRight">132000</td>
+							<td class="cellAlignRight">4400</td>
+							<td class="cellAlignRight">1977</td>
+							<td>6/6</td>
+							<td>on</td>
+							<td>tyyd.</td>
+							<td>oma							<td>D<sub>2018</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Konala</td>
+							<td>1h, kk, kph + l...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">31,00</td>
+							<td class="cellAlignRight">157000</td>
+							<td class="cellAlignRight">5065</td>
+							<td class="cellAlignRight">1962</td>
+							<td>4/4</td>
+							<td>ei</td>
+							<td>hyvä</td>
+							<td>oma							<td>D<sub>2018</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Kallio</td>
+							<td>1h,kk</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">31,00</td>
+							<td class="cellAlignRight">226000</td>
+							<td class="cellAlignRight">7290</td>
+							<td class="cellAlignRight">1939</td>
+							<td>2/7</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>G<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Vuosaari</td>
+							<td>1h, k, kph, las...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">37,50</td>
+							<td class="cellAlignRight">181000</td>
+							<td class="cellAlignRight">4827</td>
+							<td class="cellAlignRight">1967</td>
+							<td>1/7</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>F<sub>2007</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Puotila</td>
+							<td>1h, kk, kph, p ...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">28,00</td>
+							<td class="cellAlignRight">150000</td>
+							<td class="cellAlignRight">5357</td>
+							<td class="cellAlignRight">1965</td>
+							<td>1/3</td>
+							<td>ei</td>
+							<td>tyyd.</td>
+							<td>oma							<td>E<sub>2007</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Kamppi</td>
+							<td>1h+kk+kph</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">32,00</td>
+							<td class="cellAlignRight">261000</td>
+							<td class="cellAlignRight">8156</td>
+							<td class="cellAlignRight">1908</td>
+							<td>1/4</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>D</td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Etu-t&#246;&#246;l&#246;</td>
+							<td>1h,kh</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">44,20</td>
+							<td class="cellAlignRight">364550</td>
+							<td class="cellAlignRight">8248</td>
+							<td class="cellAlignRight">1915</td>
+							<td>3/6</td>
+							<td>on</td>
+							<td>huono</td>
+							<td>oma							<td>D<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Punavuori</td>
+							<td>1h, avok, alk, ...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">34,50</td>
+							<td class="cellAlignRight">425000</td>
+							<td class="cellAlignRight">12319</td>
+							<td class="cellAlignRight">2023</td>
+							<td>5/8</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Punavuori</td>
+							<td>1h, avok, kph</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">35,00</td>
+							<td class="cellAlignRight">360000</td>
+							<td class="cellAlignRight">10286</td>
+							<td class="cellAlignRight">1937</td>
+							<td>4/5</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>C<sub>2018</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Katajanokka</td>
+							<td>1h+k+alk+kph+la...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">35,50</td>
+							<td class="cellAlignRight">255000</td>
+							<td class="cellAlignRight">7183</td>
+							<td class="cellAlignRight">1982</td>
+							<td>4/6</td>
+							<td>on</td>
+							<td>tyyd.</td>
+							<td>vuokra							<td>E<sub>2007</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Pihlajam&#228;ki</td>
+							<td>1h+k+kph</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">39,50</td>
+							<td class="cellAlignRight">160000</td>
+							<td class="cellAlignRight">4051</td>
+							<td class="cellAlignRight">1965</td>
+							<td>2/3</td>
+							<td>ei</td>
+							<td>hyvä</td>
+							<td>vuokra							<td>E<sub>2007</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Kulosaari</td>
+							<td>1h, avok, kph, ...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">26,50</td>
+							<td class="cellAlignRight">237000</td>
+							<td class="cellAlignRight">8943</td>
+							<td class="cellAlignRight">1960</td>
+							<td>1/4</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>F<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Etel&#228;-haaga</td>
+							<td>1h+kk</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">29,00</td>
+							<td class="cellAlignRight">208000</td>
+							<td class="cellAlignRight">7172</td>
+							<td class="cellAlignRight">1961</td>
+							<td>2/3</td>
+							<td>ei</td>
+							<td>tyyd.</td>
+							<td>oma							<td>F<sub>2007</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Konala</td>
+							<td>1 h+kk</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">31,00</td>
+							<td class="cellAlignRight">147500</td>
+							<td class="cellAlignRight">4758</td>
+							<td class="cellAlignRight">1962</td>
+							<td>3/4</td>
+							<td>ei</td>
+							<td>tyyd.</td>
+							<td>oma							<td>E<sub>2018</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">K&#228;pyl&#228;</td>
+							<td>1h, k, kph</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">38,00</td>
+							<td class="cellAlignRight">247000</td>
+							<td class="cellAlignRight">6500</td>
+							<td class="cellAlignRight">1939</td>
+							<td>2/2</td>
+							<td>ei</td>
+							<td>tyyd.</td>
+							<td>vuokra							<td>F</td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Oulunkyl&#228;</td>
+							<td>autotalli</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">20,00</td>
+							<td class="cellAlignRight">26500</td>
+							<td class="cellAlignRight">1325</td>
+							<td class="cellAlignRight">1977</td>
+							<td>1/1</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>E<sub>2018</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Alppila</td>
+							<td>1h+kk</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">26,00</td>
+							<td class="cellAlignRight">209000</td>
+							<td class="cellAlignRight">8038</td>
+							<td class="cellAlignRight">1963</td>
+							<td>4/9</td>
+							<td>on</td>
+							<td>tyyd.</td>
+							<td>oma							<td>F<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Pukinm&#228;ki</td>
+							<td>1h, kk</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">30,00</td>
+							<td class="cellAlignRight">150000</td>
+							<td class="cellAlignRight">5000</td>
+							<td class="cellAlignRight">1986</td>
+							<td>2/3</td>
+							<td>ei</td>
+							<td>hyvä</td>
+							<td>oma							<td></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Kamppi</td>
+							<td>1h, avokeitti&#...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">31,00</td>
+							<td class="cellAlignRight">350000</td>
+							<td class="cellAlignRight">11290</td>
+							<td class="cellAlignRight">1906</td>
+							<td>1/5</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>D<sub>2007</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Kamppi</td>
+							<td>1h + k</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">32,50</td>
+							<td class="cellAlignRight">272000</td>
+							<td class="cellAlignRight">8369</td>
+							<td class="cellAlignRight">1939</td>
+							<td>3/5</td>
+							<td>on</td>
+							<td>tyyd.</td>
+							<td>oma							<td>F<sub>2007</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Punavuori</td>
+							<td>1h+k+kph+alkovi</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">33,00</td>
+							<td class="cellAlignRight">328000</td>
+							<td class="cellAlignRight">9939</td>
+							<td class="cellAlignRight">1931</td>
+							<td>2/4</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>D<sub>2018</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Vallila</td>
+							<td>1h+k+kph</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">40,00</td>
+							<td class="cellAlignRight">275000</td>
+							<td class="cellAlignRight">6875</td>
+							<td class="cellAlignRight">1925</td>
+							<td>3/3</td>
+							<td>ei</td>
+							<td>tyyd.</td>
+							<td>vuokra							<td>E<sub>2007</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">K&#228;pyl&#228;</td>
+							<td>1 h, k, kph, et</td>
+							<td class="houseType">rt</td>
+							<td class="cellAlignRight">43,00</td>
+							<td class="cellAlignRight">245000</td>
+							<td class="cellAlignRight">5698</td>
+							<td class="cellAlignRight">1921</td>
+							<td>2/2</td>
+							<td>ei</td>
+							<td>hyvä</td>
+							<td>vuokra							<td>D<sub>2018</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Munkkivuori</td>
+							<td>1h,kk,kh</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">24,70</td>
+							<td class="cellAlignRight">170000</td>
+							<td class="cellAlignRight">6883</td>
+							<td class="cellAlignRight">1957</td>
+							<td>4/4</td>
+							<td>ei</td>
+							<td>hyvä</td>
+							<td>vuokra							<td>G<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Viikinm&#228;ki</td>
+							<td>1h, kt (yht.j&#...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">29,50</td>
+							<td class="cellAlignRight">184400</td>
+							<td class="cellAlignRight">6251</td>
+							<td class="cellAlignRight">2022</td>
+							<td>3/3</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>vuokra							<td></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Kontula</td>
+							<td>1h, kk, alkovi,...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">31,50</td>
+							<td class="cellAlignRight">95000</td>
+							<td class="cellAlignRight">3016</td>
+							<td class="cellAlignRight">1967</td>
+							<td>1/8</td>
+							<td>on</td>
+							<td>tyyd.</td>
+							<td>vuokra							<td>G<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Kamppi</td>
+							<td>1h, k, kph, parvi</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">35,00</td>
+							<td class="cellAlignRight">347000</td>
+							<td class="cellAlignRight">9914</td>
+							<td class="cellAlignRight">1906</td>
+							<td>3/5</td>
+							<td>on</td>
+							<td>tyyd.</td>
+							<td>oma							<td>D<sub>2018</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">S&#246;rn&#228;inen</td>
+							<td>1h, k, alk, kph</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">48,00</td>
+							<td class="cellAlignRight">320000</td>
+							<td class="cellAlignRight">6667</td>
+							<td class="cellAlignRight">1937</td>
+							<td>3/8</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>F<sub>2007</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Konala</td>
+							<td>1h, kk, kph + l...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">31,00</td>
+							<td class="cellAlignRight">158000</td>
+							<td class="cellAlignRight">5097</td>
+							<td class="cellAlignRight">1962</td>
+							<td>1/4</td>
+							<td>ei</td>
+							<td>hyvä</td>
+							<td>oma							<td>F<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Kallio</td>
+							<td>1h, k, kph, vh</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">34,00</td>
+							<td class="cellAlignRight">270000</td>
+							<td class="cellAlignRight">7941</td>
+							<td class="cellAlignRight">1927</td>
+							<td>3/7</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>F<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Kallio</td>
+							<td>1h, kk, kph, ra...</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">21,50</td>
+							<td class="cellAlignRight">204200</td>
+							<td class="cellAlignRight">9498</td>
+							<td class="cellAlignRight">1954</td>
+							<td>4/6</td>
+							<td>on</td>
+							<td>tyyd.</td>
+							<td>oma							<td>F<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">T&#246;&#246;l&#246;</td>
+							<td>1h, k</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">27,20</td>
+							<td class="cellAlignRight">277000</td>
+							<td class="cellAlignRight">10184</td>
+							<td class="cellAlignRight">1937</td>
+							<td>1/7</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>F<sub>2013</sub></td>
+						</tr>
+						<tr>
+							<td class="neighborhood">Kallio</td>
+							<td>1h+kk</td>
+							<td class="houseType">kt</td>
+							<td class="cellAlignRight">27,50</td>
+							<td class="cellAlignRight">238000</td>
+							<td class="cellAlignRight">8655</td>
+							<td class="cellAlignRight">1961</td>
+							<td>1/6</td>
+							<td>on</td>
+							<td>hyvä</td>
+							<td>oma							<td>G<sub>2013</sub></td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<td colspan="12" class="fullWidth">
+								<table class="pagination" id="next-prev-bottom">
+									<tr>
+										<td class="more">&#160;</td>
+										<td align="center">1</td>
+										<td class="more" align="right">
+											<form action="" method="get">
+												<input type="hidden" name="c" value="Helsinki" />
+					<input type="hidden" name="cr" value="1" />
+												<input type="hidden" name="t" value="3" />
+												<input type="hidden" name="l" value="0" />
+												<input type="hidden" name="z" value="2" />
+												<input type="hidden" name="search" value="1" />
+												<input type="hidden" name="sf" value="0" />
+												<input type="hidden" name="so" value="a" />
+												<input type="hidden" name="renderType" value="renderTypeTable" />
+												<input type="hidden" name="print" value="0" />
+												<input type="submit" class="submit" name="submit" value="seuraava sivu &#187;" />
+											</form>
+
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+               
+
+            
+          
+
+            
+            
+            
+        
+
+                  
+            
+           
+
+                
+
+			</div>
+			
+            <div id="footer" role="contentinfo">
+             <div id="captionTable">
+            	<strong>19.4.2021</strong>
+					
+                        <span class="right">Lähde: Kiinteistönvälitysalan Keskusliitto</span>
+                     
+                     
+            </div>
+            
+                
+            		<div id="logos">
+                        
+                        	<a href="https://www.ara.fi/fi-FI" target="_blank"><img id="logo-ara" src="/stc/img/logo-ara.png" alt="Asumisen rahoitus- ja kehitt&#228;miskeskus (ARA)"></a>
+                         	<a href="https://www.ym.fi/fi-FI" target="_blank"><img id="logo" src="/stc/img/logo.png" alt="Ymp&#228;rist&#246;ministeri&#246;"></a>
+                        
+                    </div>
+                    <div id="footNavi">
+                       	<a href="/ohje/ohjeet.html">Ohjeet</a>&#160;|&#160;
+                       	<a href="/tietoa/tietoa.html">Tietoa palvelusta</a>&#160;|&#160;
+                    	<a href="/usein_kysyttya/usein_kysyttya.html">Usein kysyttyä</a>&#160;|&#160;
+                    	<a href="/saavutettavuusseloste/saavutettavuusseloste.html">Saavutettavuusseloste</a>&#160;|&#160;
+                    	<a href="/palaute/palaute.html">Palaute</a>
+                    	<span>&nbsp;|&nbsp;</span>
+               			<form action="/haku" method="get" onsubmit="setLang(0)">
+                    		<input type="hidden" name="l" value="0" />
+                    		<input type="submit" class="submit" name="submit" lang="fi" value="Suomeksi" />
+                		</form>
+                		<span>&nbsp;|&nbsp;</span>
+               			<form action="/haku" method="get" onsubmit="setLang(1)">
+                    		<input type="hidden" name="l" value="1" />
+                    		<input type="submit" class="submit" name="submit" lang="sv" value="P&#229; Svenska" />
+                		</form>
+                  <span class="text-size">&nbsp;|&nbsp;</span>
+                <form action="/haku" method="get" onsubmit="setLang(2)">
+                    <input type="hidden" name="l" value="2" />
+                    <input type="submit" class="submit" name="submit" lang="en" value="In English" />
+                </form>
+                	
+                    </div>
+
+                    <div id="copy">
+                        &#169; ARA
+                    </div>
+            </div>
+        
+               
+		
+		</div>
+
+               
+       
+			<script>
+			 <!-- Google Analytics -->
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-2874764-6', 'auto');
+				ga('send', 'pageview');
+				
+				
+				$( "#mobileTabApartments" ).click(function() {
+					  $( "#apartments" ).toggle();
+					  $( "#showArrowApartments" ).toggle();
+					  $( "#hideArrowApartments" ).toggle();
+					  $( "#descWrapper" ).toggle();
+					  $( "#topImg" ).toggle();
+					});
+				$( "#mobileNavi" ).click(function() {
+					  $( "#supportNavi" ).toggle();
+					});
+				$( "#close" ).click(function() {
+					  $( "#apartments" ).toggle();
+					  $( "#descWrapper" ).toggle();
+					  $( "#topImg" ).toggle();
+					});
+			</script>
+		
+		
+    </body>
+</html>
