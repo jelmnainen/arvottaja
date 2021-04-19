@@ -156,10 +156,10 @@ def has_next_page(soup):
     """
     return len(soup.select('input[value="seuraava sivu »"]')) > 0
 
-def save_data(dict_data):
+def save_data(dict_data, city:str):
     csv_columns = list(dict_data[0].keys())
     today = datetime.today().strftime("%Y-%m-%d")
-    with open(f'./scraped_data/{today}.csv', 'w') as csvfile:
+    with open(f'./scraped_data/{today}_{city}.csv', 'w') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
         writer.writeheader()
         for data in dict_data:
