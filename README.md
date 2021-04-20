@@ -2,8 +2,6 @@
 
 This repository aims to provide a method for estimating the value of a given apartment. Currently, only houses in Finland are supported.
 
-Furthermore, at the moment, the only implementations are for two data scrapers.
-
 ## Data scrapers
 These live in the `/scrapers` folder. The folders are arranged by scraped website.
 
@@ -44,7 +42,8 @@ optional arguments:
   --page PAGE  Scrape and print data for a single page, useful for debugging
 ```
 
-## Analytics
+## Data exploration
+There is a jupyter notebook in `explorations`. It currently uses the provided example data from `asuntojen-hintatiedot`. Feel free to duplicate the notebook and change in your data!
 
 ### Visualizations
 
@@ -55,3 +54,4 @@ To enable interactive plots you need to follow plotly [installation guide](https
 `jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget@4.14.3`
 
 after installing the requirements with pip.
+
